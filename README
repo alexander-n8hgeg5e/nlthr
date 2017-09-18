@@ -1,0 +1,50 @@
+Configuration
+—————————————
+
+- first read the code of the helpers.
+  (helpers are the runable parts)
+
+- adjust to your needs, check nothing wrong will happen.
+
+- use get.sh to pull something from your server.
+    -> this is your working config.
+
+- merge with 2.xkb :
+  —————————————————
+        Maybe you have to use the first section, the key codes or so from your conf ( hardware part ).
+        1.xkb is what i first used to generate a config, but not needed.
+
+- use generate to generate out.xkb to the same human readable format.
+  If that works good sign.
+  Code is formated and looks nice after that.
+  Can be merged with 2.xkb to make code look nice.
+  I used tool meld.
+
+
+- be sure to have a way to kill or shutdown xserver, make backup, logout from nuclear powerplant control things or so, and save work.
+  Maybe keyboard will not work after the following command, or something will explode because you hit the wrong key.
+  Set the config with set.sh
+
+- optional: check the install.py file, can be used to copy to homedir.
+
+- optional: add entry to ~/.xinitrc like this: test -f ~/.xkbmap && xkbcomp ~/.xkbmap $DISPLAY
+
+- if works config  done. else goto step 4 ( merge )
+
+
+
+Generate layout pdf
+———————————————————
+
+First use "generate.sh".
+Then use the generate_layout.py thing.
+
+
+Manual
+——————
+
+read the part "mastermod" of 2.xkb. Explains the thing.
+Ignore the part with the strings its not update.
+
+Read the generated pdfs. Shows where are the keys.
+
