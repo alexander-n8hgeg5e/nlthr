@@ -421,7 +421,7 @@ xkb_symbols "nlthr" {
     };
     key <AC08> {
         type= "mastermod",
-        symbols[Group1]= [               k,               K,    NoSymbol,        NoSymbol,  parenright,      braceright,               NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               k,               K,    Escape,        NoSymbol,  parenright,      braceright,               NoSymbol,        NoSymbol ]
     };
     key <AC09> {
         type= "mastermod",
