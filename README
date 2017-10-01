@@ -43,8 +43,25 @@ Then use the generate_layout.py thing.
 Manual
 ——————
 
-read the part "mastermod" of 2.xkb. Explains the thing.
+Overview:
+
+Shift, Mod3, Mod5 are the Modifiers.
+Indicator lights show them.
+Ctrl  and Alt ist free.
+Shift + Mod3 -> Level 3
+Shift + Mod5 -> Level 4
+Mod3 -> Level5
+Mod5 -> Level6
+Mod3 + Mod5 -> Level 7
+Shift + Mod3 + Mod5 -> Level 8
+
+To understand it is usefull to read the part "mastermod" of 2.xkb
 Ignore the part with the strings its not update.
+
+Pressing the F-keys together with another key can be achieved
+by pressing level 7 or 8  "F6". "F6" is on the f-key.
+This activates the overlay and the next press of any of the keys that contain F-keys
+will send only the F-key.
 
 Read the generated pdfs. Shows where are the keys.
 
