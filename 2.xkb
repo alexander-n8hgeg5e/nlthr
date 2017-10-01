@@ -273,7 +273,7 @@ xkb_compatibility "nlthr" {
         modifiers= Mod3;
     };
     indicator "LED1" {
-        modifiers= Shift ;
+        modifiers= Shift;
     };
     indicator "LED3" {
         modifiers= Mod5;
@@ -356,7 +356,7 @@ xkb_symbols "nlthr" {
     };
     key <AD05> {
         type= "mastermod",
-        symbols[Group1]= [               t,               T,         NoSymbol,        NoSymbol,    bar,       brokenbar,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               t,               T,        NoSymbol,        NoSymbol,             bar,       brokenbar,        NoSymbol,        NoSymbol ]
     };
     key <AD06> {
         type= "mastermod",
@@ -364,23 +364,23 @@ xkb_symbols "nlthr" {
     };
     key <AD07> {
         type= "mastermod",
-        symbols[Group1]= [               u,               U,      NoSymbol,        NoSymbol,     equal,          exclam,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               u,               U,        NoSymbol,        NoSymbol,           equal,          exclam,        NoSymbol,        NoSymbol ]
     };
     key <AD08> {
         type= "mastermod",
-        symbols[Group1]= [               i,               I,   NoSymbol,        NoSymbol,  bracketleft,            less,        NoSymbol,        NoSymbol]
+        symbols[Group1]= [               i,               I,        NoSymbol,        NoSymbol,     bracketleft,            less,        NoSymbol,        NoSymbol ]
     };
     key <AD09> {
         type= "mastermod",
-        symbols[Group1]= [               o,               O,  NoSymbol,        NoSymbol,  bracketright,         greater,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               o,               O,        NoSymbol,        NoSymbol,    bracketright,         greater,        NoSymbol,        NoSymbol ]
     };
     key <AD10> {
         type= "mastermod",
-        symbols[Group1]= [               p,               P,       NoSymbol,        Pause,     plus,      asciitilde,        NoSymbol,         percent ]
+        symbols[Group1]= [               p,               P,        NoSymbol,           Pause,            plus,      asciitilde,        NoSymbol,         percent ]
     };
     key <AD11> {
         type= "mastermod",
-        symbols[Group1]= [           colon,      numbersign,       NoSymbol,        NoSymbol,    minus,      udiaeresis,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [           colon,      numbersign,        NoSymbol,        NoSymbol,           minus,      udiaeresis,        NoSymbol,        NoSymbol ]
     };
     key <AD12> {
         type= "ONE_LEVEL",
@@ -417,23 +417,23 @@ xkb_symbols "nlthr" {
     };
     key <AC07> {
         type= "mastermod",
-        symbols[Group1]= [               j,               J,     NoSymbol,        NoSymbol,  parenleft,       braceleft,               NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               j,               J,        NoSymbol,        NoSymbol,       parenleft,       braceleft,        NoSymbol,        NoSymbol ]
     };
     key <AC08> {
         type= "mastermod",
-        symbols[Group1]= [               k,               K,    Escape,        NoSymbol,  parenright,      braceright,               NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               k,               K,          Escape,        NoSymbol,      parenright,      braceright,        NoSymbol,        NoSymbol ]
     };
     key <AC09> {
         type= "mastermod",
-        symbols[Group1]= [               l,               L,       NoSymbol,        NoSymbol,    slash,       backslash,              NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               l,               L,        NoSymbol,        NoSymbol,           slash,       backslash,        NoSymbol,        NoSymbol ]
     };
     key <AC10> {
         type= "mastermod",
-        symbols[Group1]= [      apostrophe,        NoSymbol,       NoSymbol,        NoSymbol,    minus,      odiaeresis,             NoSymbol,        NoSymbol ]
+        symbols[Group1]= [      apostrophe,        NoSymbol,        NoSymbol,        NoSymbol,           minus,      odiaeresis,        NoSymbol,        NoSymbol ]
     };
     key <AC11> {
         type= "mastermod",
-        symbols[Group1]= [        quotedbl,        NoSymbol,     NoSymbol,        NoSymbol,   NoSymbol,      adiaeresis,              NoSymbol,        NoSymbol ]
+        symbols[Group1]= [        quotedbl,        NoSymbol,        NoSymbol,        NoSymbol,        NoSymbol,      adiaeresis,        NoSymbol,        NoSymbol ]
     };
     key <TLDE> {
         type= "ONE_LEVEL",
@@ -476,19 +476,19 @@ xkb_symbols "nlthr" {
     };
     key <AB07> {
         type= "mastermod",
-        symbols[Group1]= [               m,               M,    NoSymbol,        NoSymbol,    asterisk,        multiply,              mu,        NoSymbol ]
+        symbols[Group1]= [               m,               M,        NoSymbol,        NoSymbol,        asterisk,        multiply,              mu,        NoSymbol ]
     };
     key <AB08> {
         type= "mastermod",
-        symbols[Group1]= [           comma,       semicolon,     NoSymbol,        NoSymbol,  semicolon,        NoSymbol,        NoSymbol,        NoSymbol]
+        symbols[Group1]= [           comma,       semicolon,        NoSymbol,        NoSymbol,       semicolon,        NoSymbol,        NoSymbol,        NoSymbol ]
     };
     key <AB09> {
         type= "mastermod",
-        symbols[Group1]= [          period,           colon,      NoSymbol,        NoSymbol,     slash,       backslash,        NoSymbol,              NoSymbol ]
+        symbols[Group1]= [          period,           colon,        NoSymbol,        NoSymbol,           slash,       backslash,        NoSymbol,        NoSymbol ]
     };
     key <AB10> {
         type= "mastermod",
-        symbols[Group1]= [           minus,      underscore,       NoSymbol,        NoSymbol, NoSymbol,          emdash,        NoSymbol,        NoSymbol]
+        symbols[Group1]= [           minus,      underscore,        NoSymbol,        NoSymbol,        NoSymbol,          emdash,        NoSymbol,        NoSymbol ]
     };
     key <RTSH> {         [         Shift_R ] };
     key <KPMU> {
@@ -564,7 +564,7 @@ xkb_symbols "nlthr" {
     };
     key <LSGT> {
         type= "mastermod",
-        symbols[Group1]= [            less,         greater,      NoSymbol,        NoSymbol,       bar,       brokenbar,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [            less,         greater,        NoSymbol,        NoSymbol,             bar,       brokenbar,        NoSymbol,        NoSymbol ]
     };
     key <FK11> {
         type= "CTRL+Mod1",
