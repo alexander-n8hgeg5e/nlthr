@@ -390,7 +390,7 @@ xkb_symbols "nlthr" {
     key <LCTL> {         [       Control_L ] };
     key <AC01> {
         type= "mastermod",
-        symbols[Group1]= [               a,               A,        NoSymbol,        NoSymbol,        NoSymbol,              at,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               a,               A,        NoSymbol,        NoSymbol,        ampersand,              at,        NoSymbol,        NoSymbol ]
     };
     key <AC02> {
         type= "mastermod",
