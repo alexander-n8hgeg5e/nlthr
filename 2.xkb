@@ -310,27 +310,27 @@ xkb_symbols "nlthr" {
         type= "ONE_LEVEL",
         symbols[Group1]= [        NoSymbol ]
     };
-    key <AE07> {
+    key <AE12> {
         type= "ONE_LEVEL",
-        symbols[Group1]= [        NoSymbol ]
+        symbols[Group1]= [        BackSpace]
     };
-    key <AE08> {
+    key <AE07> {
         type= "ONE_LEVEL",
         symbols[Group1]= [         Shift_R ]
     };
-    key <AE09> {
+    key <AE08> {
         type= "ONE_LEVEL",
         symbols[Group1]= [ ISO_Level3_Shift ]
     };
-    key <AE10> {
+    key <AE09> {
         type= "ONE_LEVEL",
         symbols[Group1]= [ ISO_Level5_Shift ]
     };
-    key <AE11> {
+    key <AE10> {
         type= "ONE_LEVEL",
         symbols[Group1]= [           Alt_R ]
     };
-    key <AE12> {
+    key <AE11> {
         type= "ONE_LEVEL",
         symbols[Group1]= [       Control_R ]
     };
