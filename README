@@ -1,7 +1,23 @@
 Features:
 —————————
+left/right hand movement: ML / MR
+left/right hands rotation: L / R 
+left/right hands finger movement: l / r
+123 <<l>> means typed 123 and used on this line "l" -> left finger movement to do this.
 
-
+	Feature: Can do this:
+	—————————————————————
+        move hands to keyboard
+	123&456=78
+	90 <<Ll>>
+	<r> 
+	+-/*\~;:¦ <<l>>
+	<r>
+	?`'"@ß$!— <<l>>
+	<r>
+	<up> <down> <left> <right>,.| <<l>>
+	<r>
+	<page up> <page down> <home> <end> <insert> <bacspace> <delete>
 
 Configuration
 —————————————
