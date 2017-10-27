@@ -194,7 +194,7 @@ xkb_types "nlthr" {
         level_name[Level5]= "Ctrl+Mod1";
     };
     type "mastermod" {
-        modifiers= Shift+Mod1+Mod3+Mod5;
+        modifiers= Shift+Mod3+Mod5;
         map[Shift]= Level2;
         map[Mod3]= Level3;
         map[Mod5]= Level4;
@@ -204,12 +204,12 @@ xkb_types "nlthr" {
         map[Shift+Mod3+Mod5]= Level8;
         level_name[Level1]= "Base";
         level_name[Level2]= "Shift";
-        level_name[Level3]= "Mod3";
-        level_name[Level4]= "Mod5";
-        level_name[Level5]= "Mod3+Mod5";
-        level_name[Level6]= "Mod1+Mod5";
-        level_name[Level7]= "Mod1+Mod3";
-        level_name[Level8]= "Mod1+Mod3+Mod5";
+        level_name[Level3]= "Mod3 -> control keys";
+        level_name[Level4]= "Mod5 -> control keys";
+        level_name[Level5]= "Shift+Mod3 -> charakters";
+        level_name[Level6]= "Shift+Mod5 -> charakters";
+        level_name[Level7]= "Mod3+Mod5 -> F-keys, other keys";
+        level_name[Level8]= "Shift+Mod3+Mod5 -> F-keys, other keys";
     };
     type "THREE_LEVEL" {
         modifiers= Shift+Mod3;
@@ -229,9 +229,6 @@ xkb_compatibility "nlthr" {
     interpret.useModMapMods= AnyLevel;
     interpret.repeat= False;
     interpret.locking= False;
-    interpret F6+AnyOfOrNone(all) {
-        action= SetControls(controls=Overlay1);
-    };
     interpret Meta_L+AnyOfOrNone(all) {
         virtualModifier= Meta;
         action= SetMods(modifiers=Mod1);
@@ -343,37 +340,37 @@ xkb_symbols "nlthr" {
     key <AD02> {
         type= "mastermod",
         overlay1= <FK01>,
-        symbols[Group1]= [               w,               W,        NoSymbol,       BackSpace,               1,        NoSymbol,              F1,              F1 ]
+        symbols[Group1]= [               w,               W,        period,       BackSpace,               1,        grave,              colon,              F1 ]
     };
     key <AD03> {
         type= "mastermod",
         overlay1= <FK02>,
-        symbols[Group1]= [               e,               E,              Up,           Prior,               2,        EuroSign,              F2,              F2 ]
+        symbols[Group1]= [               e,               E,              Up,           Prior,               2,        apostrophe,              plus,              F2 ]
     };
     key <AD04> {
         type= "mastermod",
         overlay1= <FK03>,
-        symbols[Group1]= [               r,               R,        NoSymbol,          Delete,               3,        NoSymbol,              F3,              F3 ]
+        symbols[Group1]= [               r,               R,        comma,          Delete,               3,        quotedbl,              semicolon,              F3 ]
     };
     key <AD05> {
         type= "mastermod",
-        symbols[Group1]= [               t,               T,        NoSymbol,        NoSymbol,             bar,       brokenbar,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               t,               T,        NoSymbol,        NoSymbol,             NoSymbol,       bar,        NoSymbol,        NoSymbol ]
     };
     key <AD06> {
         type= "mastermod",
-        symbols[Group1]= [               z,               Z,        NoSymbol,        NoSymbol,         percent,        NoSymbol,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               z,               Z,        NoSymbol,        NoSymbol,         percent,        ssharp,        NoSymbol,        NoSymbol ]
     };
     key <AD07> {
         type= "mastermod",
-        symbols[Group1]= [               u,               U,        NoSymbol,        NoSymbol,           equal,          exclam,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               u,               U,        NoSymbol,        NoSymbol,           bracketleft,          exclam,        NoSymbol,        NoSymbol ]
     };
     key <AD08> {
         type= "mastermod",
-        symbols[Group1]= [               i,               I,        NoSymbol,        NoSymbol,     bracketleft,            less,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               i,               I,        NoSymbol,        NoSymbol,     bracketright,            less,        NoSymbol,        NoSymbol ]
     };
     key <AD09> {
         type= "mastermod",
-        symbols[Group1]= [               o,               O,        NoSymbol,        NoSymbol,    bracketright,         greater,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               o,               O,        NoSymbol,        NoSymbol,    NoSymbol,         greater,        NoSymbol,        NoSymbol ]
     };
     key <AD10> {
         type= "mastermod",
@@ -381,7 +378,7 @@ xkb_symbols "nlthr" {
     };
     key <AD11> {
         type= "mastermod",
-        symbols[Group1]= [           colon,      numbersign,        NoSymbol,        NoSymbol,           minus,      udiaeresis,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [           colon,      numbersign,        NoSymbol,        NoSymbol,           minus,      Udiaeresis,        udiaeresis,        NoSymbol ]
     };
     key <AD12> {
         type= "ONE_LEVEL",
@@ -391,26 +388,26 @@ xkb_symbols "nlthr" {
     key <LCTL> {         [       Control_L ] };
     key <AC01> {
         type= "mastermod",
-        symbols[Group1]= [               a,               A,        NoSymbol,        NoSymbol,        ampersand,              at,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               a,               A,        period,        comma,        ampersand,              at,        backslash,        NoSymbol ]
     };
     key <AC02> {
         type= "mastermod",
         overlay1= <FK04>,
-        symbols[Group1]= [               s,               S,            Left,            Home,               4,          ssharp,              F4,              F4 ]
+        symbols[Group1]= [               s,               S,            Left,            Home,               4,          ssharp,              slash,              F4 ]
     };
     key <AC03> {
         type= "mastermod",
         overlay1= <FK05>,
-        symbols[Group1]= [               d,               D,            Down,            Next,               5,          dollar,              F5,              F5 ]
+        symbols[Group1]= [               d,               D,            Down,            Next,               5,          dollar,              minus,              F5 ]
     };
     key <AC04> {
         type= "mastermod",
         overlay1= <FK06>,
-        symbols[Group1]= [               f,               F,           Right,             End,               6,        NoSymbol,              F6,              F6 ]
+        symbols[Group1]= [               f,               F,           Right,             End,               6,        exclam,              asterisk,              F6 ]
     };
     key <AC05> {
         type= "mastermod",
-        symbols[Group1]= [               g,               G,        NoSymbol,        NoSymbol,        NoSymbol,        NoSymbol,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [               g,               G,        NoSymbol,        NoSymbol,        equal,        NoSymbol,        asciitilde,        NoSymbol ]
     };
     key <AC06> {
         type= "mastermod",
@@ -430,11 +427,11 @@ xkb_symbols "nlthr" {
     };
     key <AC10> {
         type= "mastermod",
-        symbols[Group1]= [      apostrophe,        NoSymbol,        NoSymbol,        NoSymbol,           minus,      odiaeresis,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [      odiaeresis,        Odiaeresis,        grave,        NoSymbol,           minus,      Odiaeresis,        odiaeresis,        NoSymbol ]
     };
     key <AC11> {
         type= "mastermod",
-        symbols[Group1]= [        quotedbl,        NoSymbol,        NoSymbol,        NoSymbol,        NoSymbol,      adiaeresis,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [        adiaeresis,        Adiaeresis,        NoSymbol,        NoSymbol,        NoSymbol,      Adiaeresis,        adiaeresis,        NoSymbol ]
     };
     key <TLDE> {
         type= "ONE_LEVEL",
@@ -479,6 +476,7 @@ xkb_symbols "nlthr" {
         type= "mastermod",
         symbols[Group1]= [               m,               M,        NoSymbol,        NoSymbol,        asterisk,        multiply,              mu,        NoSymbol ]
     };
+    
     key <AB08> {
         type= "mastermod",
         symbols[Group1]= [           comma,       semicolon,        NoSymbol,        NoSymbol,       semicolon,        NoSymbol,        NoSymbol,        NoSymbol ]
@@ -497,7 +495,7 @@ xkb_symbols "nlthr" {
         symbols[Group1]= [     KP_Multiply,     KP_Multiply,     KP_Multiply,     KP_Multiply,   XF86ClearGrab ]
     };
     key <LALT> {         [           Alt_L,          Meta_L ] };
-    key <SPCE> {         [           space ] };
+    key <SPCE> { type= "mastermod",  symbols[Group1]=[           space, underscore , bar,minus,brokenbar,emdash,NoSymbol,NoSymbol] };
     key <CAPS> {         [         Escape ] };
     key <FK01> {
         type= "mastermod",
