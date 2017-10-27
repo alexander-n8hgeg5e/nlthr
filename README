@@ -1,3 +1,8 @@
+Features:
+—————————
+
+
+
 Configuration
 —————————————
 
@@ -54,14 +59,25 @@ Mod3 -> Level5
 Mod5 -> Level6
 Mod3 + Mod5 -> Level 7
 Shift + Mod3 + Mod5 -> Level 8
+The Modifiers,
+are on 980 and 432 on the number row.
+Number row on not othogonal typewriter style keyboard looks like this: 
+CA53SXXXS35AC
+The 3 uppercase X are the 567-keys.
+I want to use this layout on orthogonal keybords.
+Because this and because the both "S"-keys are intended to be straight obove "j",
+i spare out one of the uppercase X in the
+following base Layout.
+Uppercase X means not used.
+
+CA53SXXS35AC           base level 
+Tqwertzuiop:           T is Tab
+assdfghjkl'"
+yxcvbnm,.-XX
+
 
 To understand it is usefull to read the part "mastermod" of 2.xkb
 Ignore the part with the strings its not update.
-
-Pressing the F-keys together with another key can be achieved
-by pressing level 7 or 8  "F6". "F6" is on the f-key.
-This activates the overlay and the next press of any of the keys that contain F-keys
-will send only the F-key.
 
 Read the generated pdfs. Shows where are the keys.
 
