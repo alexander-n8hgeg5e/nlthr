@@ -21,3 +21,6 @@ src_compile() {
 generate.sh
 }
 
+src_install(){
+
+}

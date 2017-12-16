@@ -19,18 +19,20 @@ from shlex import split
 import subprocess
 pdftkcmd=['pdftk']
 rmcmd=['rm']
-subprocess.check_call(['xkbcomp','2.xkb'])
+filename=['out.xkb']
+intermediate_xkm_file=['out.xkm'] 
+gencmd=split('xkbcomp -I.')
+subprocess.check_call(gencmd+filename)
 for i in [1,3,5,7]:
-    cmd=split('xkbprint -color -level2 -ll '+str(i)+' 2.xkm keyboard_l'+str(i)+'.ps')
+    cmd=split('xkbprint -color -level2 -ll')+[str(i)]+intermediate_xkm_file+split('keyboard_l'+str(i)+'.ps')
     subprocess.check_call(cmd)
     subprocess.check_call(['ps2pdf','keyboard_l'+str(i)+'.ps'])
     subprocess.check_call(['rm','keyboard_l'+str(i)+'.ps'])
     pdftkcmd.append('keyboard_l'+str(i)+'.pdf')
     rmcmd.append('keyboard_l'+str(i)+'.pdf')
 pdftkcmd=pdftkcmd+['output','keyboardlayout.pdf']
-rmcmd=rmcmd+['2.xkm']
 subprocess.check_call(pdftkcmd)
-subprocess.check_call(rmcmd)
+subprocess.check_call(rmcmd+intermediate_xkm_file)
 
         
  

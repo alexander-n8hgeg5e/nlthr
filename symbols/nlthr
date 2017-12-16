@@ -83,7 +83,7 @@ xkb_symbols "nlthr" {
     };
     key <AD07> {
         type= "mastermod",
-        symbols[Group1]= [               u,               U,        NoSymbol,       bracketleft ,          NoSymbol ,    NoSymbol      ,   less     ,        NoSymbol ]
+        symbols[Group1]= [               u,               U,        udiaeresis,       bracketleft ,          Udiaeresis ,    NoSymbol      ,   less     ,        NoSymbol ]
     };
     key <AD08> {
         type= "mastermod",
@@ -99,7 +99,7 @@ xkb_symbols "nlthr" {
     };
     key <AD11> {
         type= "mastermod",
-        symbols[Group1]= [           colon,      numbersign,        NoSymbol,        NoSymbol,           minus,      Udiaeresis,        udiaeresis,        NoSymbol ]
+        symbols[Group1]= [           colon,      NoSymbol ,        NoSymbol,        NoSymbol,           NoSymbol,      Udiaeresis,        udiaeresis,        NoSymbol ]
     };
     key <AD12> {
         type= "ONE_LEVEL",
@@ -148,9 +148,9 @@ xkb_symbols "nlthr" {
     };
     key <AC10> {
         type= "mastermod",
-        symbols[Group1]= [     numbersign,         NoSymbol, NoSymbol,        NoSymbol,           NoSymbol,      NoSymbol,        NoSymbol,        NoSymbol ]
+        symbols[Group1]= [     underscore,         NoSymbol, NoSymbol,        NoSymbol,           NoSymbol,      NoSymbol,        NoSymbol,        NoSymbol ]
     };
-    key <AC11> {         [          Return ] };
+    key <AC11> {         [          numbersign ] };
     key <TLDE> {
         type= "ONE_LEVEL",
         symbols[Group1]= [       Control_L ]
@@ -213,7 +213,7 @@ xkb_symbols "nlthr" {
         symbols[Group1]= [     KP_Multiply,     KP_Multiply,     KP_Multiply,     KP_Multiply,   XF86ClearGrab ]
     };
     key <LALT> {         [           Alt_L,          Meta_L ] };
-    key <SPCE> { type= "mastermod",  symbols[Group1]=[           space, space, underscore, minus,NoSymbol,emdash,bar,NoSymbol] };
+    key <SPCE> { type= "mastermod",  symbols[Group1]=[           space, space, Return , Escape,NoSymbol,emdash,bar,NoSymbol] };
     key <CAPS> {         [         Escape ] };
     key <FK01> {
         type= "mastermod",
