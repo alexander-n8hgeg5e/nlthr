@@ -1,0 +1,7 @@
+xkb_keymap {
+    xkb_keycodes  { include "cherry_rs6000usb_mod" };
+    xkb_types     { include "nlthr" };
+    xkb_compat    { include "nlthr" };
+    xkb_symbols   { include "nlthr" };
+    xkb_geometry  { include "nlthr" };
+};

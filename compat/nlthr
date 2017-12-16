@@ -1,0 +1,54 @@
+xkb_compatibility "nlthr" {
+
+    virtual_modifiers Alt,Meta;
+
+    interpret.useModMapMods= AnyLevel;
+    interpret.repeat= False;
+    interpret.locking= False;
+    interpret Meta_L+AnyOfOrNone(all) {
+        virtualModifier= Meta;
+        action= SetMods(modifiers=Mod1);
+    };
+    interpret Meta_R+AnyOfOrNone(all) {
+        virtualModifier= Meta;
+        action= SetMods(modifiers=Mod1);
+    };
+    interpret Alt_L+AnyOfOrNone(all) {
+        virtualModifier= Alt;
+        action= SetMods(modifiers=Mod1);
+    };
+    interpret Alt_R+AnyOfOrNone(all) {
+        virtualModifier= Alt;
+        action= SetMods(modifiers=Mod1);
+    };
+    interpret ISO_Level5_Shift+AnyOfOrNone(all) {
+        action= SetMods(modifiers=Mod5);
+    };
+    interpret ISO_Level3_Shift+AnyOfOrNone(all) {
+        action= SetMods(modifiers=Mod3);
+    };
+    interpret Control_L+AnyOfOrNone(all) {
+        action= SetMods(modifiers=Control);
+    };
+    interpret Control_R+AnyOfOrNone(all) {
+        action= SetMods(modifiers=Control);
+    };
+    interpret Shift_L+AnyOfOrNone(all) {
+        action= SetMods(modifiers=Shift);
+    };
+    interpret Shift_R+AnyOfOrNone(all) {
+        action= SetMods(modifiers=Shift);
+    };
+    interpret Any+AnyOf(all) {
+        action= SetMods(modifiers=modMapMods);
+    };
+    indicator "LED2" {
+        modifiers= Mod3;
+    };
+    indicator "LED1" {
+        modifiers= Shift;
+    };
+    indicator "LED3" {
+        modifiers= Mod5;
+    };
+};

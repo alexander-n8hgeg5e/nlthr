@@ -1,4 +1,6 @@
-#    nlthr some file Copyright (C) 2017 Alexander Wilhelmi
+#!/bin/fish
+#
+#    nlthr get helper Copyright (C) 2017 Alexander Wilhelmi
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -13,14 +15,6 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-
-xkb_keymap {
-		xkb_keycodes { include "codes+aliases(qwertz)" };
-        xkb_types     { include "complete" };
-		xkb_compatibility    { include "pc+basic+iso9995" };
-        xkb_symbols   {
-             include "pc(pc105)+de(basic)"
-          };
-        
-		xkb_geometry  { include "pc(pc105)" };
-};
+#xkbcomp -I. 1.xkb out
+#xkbcomp  out out.xkb
+xkbcomp  -I. -xkb  keymap_eeepc1015pem.xkb out.xkb

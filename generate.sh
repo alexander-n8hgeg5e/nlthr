@@ -17,5 +17,4 @@
 
 #xkbcomp -I. 1.xkb out
 #xkbcomp  out out.xkb
-
-xkbcomp    -xkb  2.xkb out.xkb
+xkbcomp  -I. -xkb  keymap.xkb out.xkb

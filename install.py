@@ -16,6 +16,6 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import subprocess
-username='someonenotexisting'
+username=''
 subprocess.check_call(['cp','2.xkb','/home/'+username+'/.xkbmap'])
 

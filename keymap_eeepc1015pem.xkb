@@ -1,0 +1,7 @@
+xkb_keymap {
+    xkb_keycodes  { include "eeepc1015pem_mod" };
+    xkb_types     { include "nlthr" };
+    xkb_compat    { include "nlthr" };
+    xkb_symbols   { include "nlthr" };
+    xkb_geometry  { include "nlthr" };
+};

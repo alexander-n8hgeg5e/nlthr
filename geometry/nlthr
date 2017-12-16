@@ -1,0 +1,176 @@
+xkb_geometry "nlthr" {
+
+    width=       300;
+    height=      110;
+
+    alias <AC00> = <CAPS>;
+    alias <AA00> = <LCTL>;
+
+    baseColor=   "white";
+    labelColor=  "black";
+    xfont=       "-*-helvetica-medium-r-normal--*-120-*-*-*-*-iso8859-1";
+    description= "improved";
+
+    shape "NORM" {
+        corner= 1,
+        { [  18,  18 ] },
+        { [   2,   1 ], [  16,  16 ] }
+    };
+    shape "BKSP" {
+        corner= 1,
+        { [  38,  18 ] },
+        { [   2,   1 ], [  36,  16 ] }
+    };
+    shape "TABK" {
+        corner= 1,
+        { [  28,  18 ] },
+        { [   2,   1 ], [  26,  16 ] }
+    };
+    shape "BKSL" {
+        corner= 1,
+        { [  28,  18 ] },
+        { [   2,   1 ], [  26,  16 ] }
+    };
+    shape "RTRN" {
+        corner= 1,
+        { [   0,   0 ], [  28,   0 ], [  28,  37 ], [   5,  37 ],
+          [   5,  18 ], [   0,  18 ] },
+        { [   2,   1 ], [  26,   1 ], [  26,  35 ], [   7,  35 ],
+          [   7,  16 ], [   2,  16 ] },
+        approx= { [   5,   0 ], [  28,  37 ] }
+    };
+    shape "CAPS" {
+        corner= 1,
+        { [  33,  18 ] },
+        { [   2,   1 ], [  31,  16 ] }
+    };
+    shape "LFSH" {
+        corner= 1,
+        { [  25,  18 ] },
+        { [   2,   1 ], [  23,  16 ] }
+    };
+    shape "RTSH" {
+        corner= 1,
+        { [  50,  18 ] },
+        { [   2,   1 ], [  48,  16 ] }
+    };
+    shape "MODK" {
+        corner= 1,
+        { [  27,  18 ] },
+        { [   2,   1 ], [  25,  16 ] }
+    };
+    shape "SMOD" {
+        corner= 1,
+        { [  23,  18 ] },
+        { [   2,   1 ], [  21,  16 ] }
+    };
+    shape "SPCE" {
+        corner= 1,
+        { [ 113,  18 ] },
+        { [   2,   1 ], [ 111,  16 ] }
+    };
+    shape "KP0" {
+        corner= 1,
+        { [  37,  18 ] },
+        { [   2,   1 ], [  35,  16 ] }
+    };
+    shape "KPAD" {
+        corner= 1,
+        { [  18,  37 ] },
+        { [   2,   1 ], [  16,  35 ] }
+    };
+    shape "LEDS" { { [  75,  20 ] } };
+    shape "LED" { { [   5,   1 ] } };
+    section "Alpha" {
+        key.color= "grey10";
+        priority=  8;
+        top=       5;
+        left=      5;
+        width=     200;
+        height=    95;
+        row {
+            top=  1;
+            left= 1;
+            keys {
+                { <TLDE>, "NORM",   1 }, { <AE01>, "NORM",   1 },
+                { <AE02>, "NORM",   1, color="grey20" },
+                { <AE03>, "NORM",   1, color="grey20" },
+                { <AE04>, "NORM",   1, color="grey20" },
+                { <AE05>, "NORM",   1, color="white" },
+                { <AE06>, "NORM",   1, color="white" },
+                { <AE07>, "NORM",   1, color="white" },
+                { <AE08>, "NORM",   1, color="grey20" },
+                { <AE09>, "NORM",   1, color="grey20" },
+                { <AE10>, "NORM",   1, color="grey20" },
+                { <AE11>, "NORM",   1 }, { <AE12>, "NORM",   1 },
+                { <BKSP>, "BKSP",   1, color="white" }
+            };
+        };
+        row {
+            top=  20;
+            left= 1;
+            keys {
+                {  <TAB>, "TABK",   1, color="white" },
+                { <AD01>, "NORM",   1, color="white" },
+                { <AD02>, "NORM",   1, color="white" },
+                { <AD03>, "NORM",   1, color="white" },
+                { <AD04>, "NORM",   1, color="white" },
+                { <AD05>, "NORM",   1, color="white" },
+                { <AD06>, "NORM",   1, color="white" },
+                { <AD07>, "NORM",   1, color="white" },
+                { <AD08>, "NORM",   1, color="white" },
+                { <AD09>, "NORM",   1, color="white" },
+                { <AD10>, "NORM",   1, color="white" },
+                { <AD11>, "NORM",   1, color="white" },
+                { <AD12>, "NORM",   1, color="white" },
+                { <RTRN>, "RTRN",   1, color="white" }
+            };
+        };
+        row {
+            top=  39;
+            left= 1;
+            keys {
+                { <CAPS>, "CAPS",   1, color="grey20" },
+                { <AC01>, "NORM",   1, color="white" },
+                { <AC02>, "NORM",   1, color="white" },
+                { <AC03>, "NORM",   1, color="white" },
+                { <AC04>, "NORM",   1, color="white" },
+                { <AC05>, "NORM",   1, color="white" },
+                { <AC06>, "NORM",   1, color="white" },
+                { <AC07>, "NORM",   1, color="white" },
+                { <AC08>, "NORM",   1, color="white" },
+                { <AC09>, "NORM",   1, color="white" },
+                { <AC10>, "NORM",   1, color="white" },
+                { <AC11>, "NORM",   1, color="white" },
+                { <BKSL>, "NORM",   1, color="grey20" }
+            };
+        };
+        row {
+            top=  58;
+            left= 1;
+            keys {
+                { <LFSH>, "LFSH",   1, color="grey20" },
+                { <LSGT>, "NORM",   1, color="white" },
+                { <AB01>, "NORM",   1, color="white" },
+                { <AB02>, "NORM",   1, color="white" },
+                { <AB03>, "NORM",   1, color="white" },
+                { <AB04>, "NORM",   1, color="white" },
+                { <AB05>, "NORM",   1, color="white" },
+                { <AB06>, "NORM",   1, color="white" },
+                { <AB07>, "NORM",   1, color="white" },
+                { <AB08>, "NORM",   1, color="white" },
+                { <AB09>, "NORM",   1, color="white" },
+                { <AB10>, "NORM",   1, color="white" },
+                { <RTSH>, "RTSH",   1, color="grey20" }
+            };
+        };
+        row {
+            top=  77;
+            left= 80;
+            keys {
+                { <SPCE>, "SPCE",   1, color="white" }
+            };
+        };
+    }; // End of "Alpha" section
+
+};

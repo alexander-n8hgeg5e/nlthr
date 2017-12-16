@@ -1,0 +1,81 @@
+xkb_types "nlthr" {
+
+    virtual_modifiers Alt,Meta;
+
+    type "ONE_LEVEL" {
+        modifiers= none;
+        level_name[Level1]= "Any";
+    };
+    type "TWO_LEVEL" {
+        modifiers= Shift;
+        map[Shift]= Level2;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+    };
+    type "ALPHABETIC" {
+        modifiers= Shift;
+        map[Shift]= Level2;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+    };
+    type "KEYPAD" {
+        modifiers= Shift;
+        map[Shift]= Level2;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+    };
+    type "PC_CONTROL_LEVEL2" {
+        modifiers= Control;
+        map[Control]= Level2;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Control";
+    };
+    type "PC_Mod1_LEVEL2" {
+        modifiers= Mod1;
+        map[Mod1]= Level2;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Mod1";
+    };
+    type "CTRL+Mod1" {
+        modifiers= Shift+Control+Mod1+Mod3;
+        map[Shift]= Level2;
+        preserve[Shift]= Shift;
+        map[Mod3]= Level3;
+        map[Shift+Mod3]= Level4;
+        map[Control+Mod1]= Level5;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+        level_name[Level3]= "Mod1 Base";
+        level_name[Level4]= "Shift Mod1";
+        level_name[Level5]= "Ctrl+Mod1";
+    };
+    type "mastermod" {
+        modifiers= Shift+Mod3+Mod5;
+        map[Shift]= Level2;
+        map[Mod3]= Level3;
+        map[Mod5]= Level4;
+        map[Shift+Mod3]= Level5;
+        map[Shift+Mod5]= Level6;
+        map[Mod3+Mod5]= Level7;
+        map[Shift+Mod3+Mod5]= Level8;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+        level_name[Level3]= "Mod3 -> control keys";
+        level_name[Level4]= "Mod5 -> control keys";
+        level_name[Level5]= "Shift+Mod3 -> charakters";
+        level_name[Level6]= "Shift+Mod5 -> charakters";
+        level_name[Level7]= "Mod3+Mod5 -> F-keys, other keys";
+        level_name[Level8]= "Shift+Mod3+Mod5 -> F-keys, other keys";
+    };
+    type "THREE_LEVEL" {
+        modifiers= Shift+Mod3;
+        map[Shift]= Level2;
+        map[Mod3]= Level3;
+        map[Shift+Mod3]= Level3;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+        level_name[Level3]= "Level3";
+    };
+};
+
+
