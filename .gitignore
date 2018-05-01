@@ -4,3 +4,4 @@ from-server.xkb
 *.vimbackup
 keyboardlayout.pdf
 xkbmap.example.xkb
+hardware.conf
