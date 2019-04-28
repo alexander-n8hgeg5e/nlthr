@@ -5,3 +5,4 @@ from-server.xkb
 keyboardlayout.pdf
 xkbmap.example.xkb
 hardware.conf
+.xkm
